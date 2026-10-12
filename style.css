@@ -58,6 +58,18 @@ body {
     color: #5d6d7e;
 }
 
+
+/* Company Name Tag */
+.company-tag {
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
 /* Main Form Card */
 .card {
     background-color: #ffffff;
