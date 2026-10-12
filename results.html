@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Information Retriever - Search Results</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <main class="container">
+        
+        <!-- Header Section -->
+        <header class="header">
+            <span class="badge">
+                <span class="dot"></span> Internal Lead Gen Tool
+            </span>
+            <h1>Company Information Retriever</h1>
+            <p class="subtitle">Find newly registered Finnish companies for B2B sales outreach and website design prospects.</p>
+        </header>
+
+        <!-- Search Card Form -->
+        <section class="card">
+            <form id="search-form" onsubmit="return false;">
+                
+                <div class="form-grid">
+                    
+                    <!-- City Input -->
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-magnifying-glass input-icon"></i>
+                            <input type="text" id="city" value="Kuopio">
+                        </div>
+                    </div>
+
+                    <!-- Business Line Selector -->
+                    <div class="form-group">
+                        <label for="business-line">Business Line</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-building input-icon"></i>
+                            <select id="business-line">
+                                <option value="" disabled>Select business line</option>
+                                <option value="10">10 Agriculture</option>
+                                <option value="55" selected>55 Accommodation</option>
+                                <option value="62">62 IT Services</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down select-chevron"></i>
+                        </div>
+                    </div>
+
+                    <!-- Registration Start Date -->
+                    <div class="form-group">
+                        <label for="start-date">Registration Start Date</label>
+                        <div class="input-wrapper date-wrapper">
+                            <input type="date" id="start-date" value="2026-09-01">
+                        </div>
+                    </div>
+
+                    <!-- Registration End Date -->
+                    <div class="form-group">
+                        <label for="end-date">Registration End Date</label>
+                        <div class="input-wrapper date-wrapper">
+                            <input type="date" id="end-date" value="2026-10-12">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Form Action Buttons -->
+                <div class="button-group">
+                    <button type="submit" class="btn-primary">
+                        <i class="fa-solid fa-magnifying-glass"></i> Search
+                    </button>
+                    <button type="reset" class="btn-secondary">
+                        Clear Filters
+                    </button>
+                </div>
+
+            </form>
+        </section>
+
+        <!-- Successful Search Results Card State -->
+        <section class="card results-card">
+            <div class="results-header">
+                <h2>1 result found for Kuopio (Accommodation)</h2>
+                <button class="btn-export"><i class="fa-solid fa-download"></i> Export CSV</button>
+            </div>
+
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Business ID</th>
+                            <th>Company Name</th>
+                            <th>City</th>
+                            <th>Registration Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>3482109-2</strong></td>
+                            <td>Saimaa Resort Services Oy</td>
+                            <td>Kuopio</td>
+                            <td>05.10.2026</td>
+                            <td><span class="status-badge">New Lead</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
