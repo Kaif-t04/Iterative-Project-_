@@ -162,23 +162,26 @@ body {
 
 .btn-primary {
     height: 54px;
-    background-color: #00897b; /* Primary Teal */
+    background-color: #00897b;
     color: #ffffff;
     border: none;
     border-radius: 10px;
-    font-size: 16px; 
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    text-decoration: none; /* Removes default link underline */
     transition: background-color 0.2s ease;
 }
 
 .btn-primary:hover {
     background-color: #0b7068;
+    color: #ffffff; /* Keeps text white on hover */
 }
+
 
 .btn-secondary {
     height: 54px;
